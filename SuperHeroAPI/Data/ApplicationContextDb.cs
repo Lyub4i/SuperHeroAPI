@@ -2,9 +2,9 @@
 
 namespace SuperHeroAPI.Data
 {
-    public class ApplactionContextDb : DbContext
+    public class ApplicationContextDb : DbContext
     {
-        public ApplactionContextDb(DbContextOptions options): base(options)
+        public ApplicationContextDb(DbContextOptions options): base(options)
         {
 
         }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
+using SuperHeroAPI.Data;
 
 namespace SuperHeroAPI.Controllers
 {
@@ -7,6 +8,13 @@ namespace SuperHeroAPI.Controllers
     [ApiController]
     public class SuperHeroController : Controller
     {
+        public readonly ApplicationContextDb _context;
+
+        public SuperHeroController( ApplicationContextDb context)
+        {
+            _context = context;
+        }
+
         private static List<SuperHero> heroes = new List<SuperHero>
         {
             new SuperHero
