@@ -32,5 +32,12 @@ namespace SuperHeroAPI.Controllers
         {
             return Ok(heroes);
         }
+
+        [HttpPost]
+        public async Task<ActionResult<List<SuperHero>>> AddHero(SuperHero hero)
+        {
+            heroes.Add(hero);
+            return Ok(heroes);
+        }
     }
 }
