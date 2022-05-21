@@ -1,6 +1,6 @@
 ﻿namespace SuperHeroAPI
 {
-    public class SupeHeroClass
+    public class SuperHero
     {
         public int Id { get; set; }
         public string? Name { get; set; }
