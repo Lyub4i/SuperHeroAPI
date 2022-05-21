@@ -4,11 +4,11 @@ namespace SuperHeroAPI.Data
 {
     public class ApplicationContextDb : DbContext
     {
-        public ApplicationContextDb(DbContextOptions options): base(options)
+        public ApplicationContextDb(DbContextOptions<ApplicationContextDb> options): base(options)
         {
 
         }
 
-        public DbSet<SuperHero> Heroes { get; set; }
+        public DbSet<SuperHero> SuperHeroes { get; set; }
     }
 }
